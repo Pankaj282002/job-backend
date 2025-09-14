@@ -8,7 +8,11 @@ require('dotenv').config(); // This line is crucial!
 const app = express();
 
 // Middleware
-app.use(cors());
+const corsOptions = {
+  origin: 'https://job-board-frontend.vercel.app'
+};
+
+app.use(cors(corsOptions)); // <-- This is the corrected line
 app.use(express.json());
 
 // Routes
