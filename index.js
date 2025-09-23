@@ -9,7 +9,7 @@ const app = express();
 
 // Middleware
 const corsOptions = {
-  origin: 'https://job-board-frontend.vercel.app'
+  origin: 'https://job-frontend-ce4s-5uqiz89w8-pankaj282002s-projects.vercel.app'
 };
 
 app.use(cors(corsOptions)); // <-- This is the corrected line
